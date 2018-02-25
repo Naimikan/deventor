@@ -1,4 +1,7 @@
 <p align="right">
+  <a href="https://www.npmjs.com/package/deventor">
+    <img src="https://img.shields.io/npm/v/deventor.svg" alt="version" />
+  </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/npm/l/deventor.svg" alt="license" />
   </a>
