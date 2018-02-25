@@ -2,25 +2,25 @@
 
 `deventor` is a minimal event emitter system built entirely in pure Javascript with 0 dependencies, focused on the browser.
 
-* **Class**: [Deventor(deventorSettings)]()
-* **Event**: [Deventor:newListener]()
-* **Event**: [Deventor:removeListener]()
-* **Event**: [Deventor:setMaxListeners]()
-* **Static Attribute**: [Deventor.defaultMaxListeners]()
-* **Static Attribute**: [Deventor.EVENT_EMITTER_EVENTS]()
-* **Method**: [deventor.getDeventorName()]()
-* **Method**: [deventor.setDeventorName(deventorName)]()
-* **Method**: [deventor.getMaxListeners()]()
-* **Method**: [deventor.setMaxListeners(maxListeners)]()
-* **Method**: [deventor.getEventNames()]()
-* **Method**: [deventor.getListenersByEventName(eventName)]()
-* **Method**: [deventor.on(eventName, listener)]()
-* **Method**: [deventor.once(eventName, listener)]()
-* **Method**: [deventor.off(eventName, listener)]()
-* **Method**: [deventor.emit(eventName[,...args])]()
-* **Method**: [deventor.removeAllListeners()]()
-* **Method**: [deventor.addListener(eventName, listener)]()
-* **Method**: [deventor.removeListener(eventName, listener)]()
+* **Class**: [Deventor(deventorSettings)](#class-deventordeventorsettings)
+* **Event**: [Deventor:newListener](#event-deventornewlistener)
+* **Event**: [Deventor:removeListener](#event-deventorremovelistener)
+* **Event**: [Deventor:setMaxListeners](#event-deventorsetmaxlisteners)
+* **Static Attribute**: [Deventor.defaultMaxListeners](#static-attribute-deventordefaultmaxlisteners)
+* **Static Attribute**: [Deventor.DEVENTOR_EVENTS](#static-attribute-deventordeventor_events)
+* **Method**: [deventor.getDeventorName()](#method-deventorgetdeventorname)
+* **Method**: [deventor.setDeventorName(deventorName)](#method-deventorsetdeventornamedeventorname)
+* **Method**: [deventor.getMaxListeners()](#method-deventorgetmaxlisteners)
+* **Method**: [deventor.setMaxListeners(maxListeners)](#method-deventorsetmaxlistenersmaxlisteners)
+* **Method**: [deventor.getEventNames()](#method-deventorgeteventnames)
+* **Method**: [deventor.getListenersByEventName(eventName)](#method-deventorgetlistenersbyeventnameeventname)
+* **Method**: [deventor.on(eventName, listener)](#method-deventoroneventname-listener)
+* **Method**: [deventor.once(eventName, listener)](#method-deventoronceeventname-listener)
+* **Method**: [deventor.off(eventName, listener)](#method-deventoroffeventname-listener)
+* **Method**: [deventor.emit(eventName[,...args])](#method-deventoremiteventnameargs)
+* **Method**: [deventor.removeAllListeners()](#method-deventorremovealllisteners)
+* **Method**: [deventor.addListener(eventName, listener)](#method-deventoraddlistenereventname-listener)
+* **Method**: [deventor.removeListener(eventName, listener)](#method-deventorremovelistenereventname-listener)
 
 ## Class: Deventor(deventorSettings)
 
@@ -119,9 +119,9 @@ myDeventor.setMaxListeners(20);
 
 ## Static Attribute: Deventor.defaultMaxListeners
 
-By default, a maximum of `10` listeners can be registered for any single event. This limit can be changed for individual `Deventor` instances using the [deventor.setMaxListeners(number)](#) method. To change the default for all `Deventor` instances, the `Deventor.defaultMaxListeners` property can be used.
+By default, a maximum of `10` listeners can be registered for any single event. This limit can be changed for individual `Deventor` instances using the [deventor.setMaxListeners(maxListeners)](#method-deventorsetmaxlistenersmaxlisteners) method. To change the default for all `Deventor` instances, the `Deventor.defaultMaxListeners` property can be used.
 
-Note that this is not a hard limit. The `Deventor` instance will allow more listeners to be added but will output a trace warning to console indicating that "Max. listeners exceeded to [eventName] event. Max. listeners = [maxListeners]. Take care of memory leaks.". For any single `Deventor`, the [deventor.getMaxListeners()](#) and [deventor.setMaxListeners(number)](#) methods can be used to temporarily avoid this warning:
+Note that this is not a hard limit. The `Deventor` instance will allow more listeners to be added but will output a trace warning to console indicating that "Max. listeners exceeded to [eventName] event. Max. listeners = [maxListeners]. Take care of memory leaks.". For any single `Deventor`, the [deventor.getMaxListeners()](#method-deventorgetmaxlisteners) and [deventor.setMaxListeners(maxListeners)](#method-deventorsetmaxlistenersmaxlisteners) methods can be used to temporarily avoid this warning:
 
 ```javascript
 var myDeventor = new Deventor();
@@ -170,7 +170,7 @@ console.log(myDeventor.getDeventorName());
 
 ## Method: deventor.getMaxListeners()
 
-Returns the current max listeners value for the `Deventor` which is either set by [deventor.setMaxListeners(number)]() or defaults to [Deventor.defaultMaxListeners]()
+Returns the current max listeners value for the `Deventor` which is either set by [deventor.setMaxListeners(maxListeners)](#method-deventorsetmaxlistenersmaxlisteners) or defaults to [Deventor.defaultMaxListeners](#static-attribute-deventordefaultmaxlisteners)
 
 ```javascript
 var myDeventor = new Deventor();
@@ -330,11 +330,11 @@ myDeventor.removeAllListeners();
 * **eventName** _{String}_ The name of the event
 * **listener** _{Function}_ The callback function
 
-Alias for [deventor.on(eventName, listener)]()
+Alias for [deventor.on(eventName, listener)](#method-deventoroneventname-listener)
 
 ## Method: deventor.removeListener(eventName, listener)
 
 * **eventName** _{String}_ The name of the event
 * **listener** _{Function}_ The callback function
 
-Alias for [deventor.off(eventName, listener)]()
+Alias for [deventor.off(eventName, listener)](#method-deventoroffeventname-listener)
