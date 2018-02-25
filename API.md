@@ -7,7 +7,7 @@
 * **Event**: [Deventor:removeListener]()
 * **Event**: [Deventor:setMaxListeners]()
 * **Static Attribute**: [Deventor.defaultMaxListeners]()
-* **Static Attribute**: [Deventor.EVENT_EMITTER_EVENTS]()
+* **Static Attribute**: [Deventor.DEVENTOR_EVENTS]()
 * **Method**: [deventor.getDeventorName()]()
 * **Method**: [deventor.setDeventorName(deventorName)]()
 * **Method**: [deventor.getMaxListeners()]()
