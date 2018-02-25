@@ -1,0 +1,12 @@
+{
+	"dist": {
+		"options": {
+			"banner": "/*!\n*  <%= package.name %> <%= package.version %> <%= grunt.template.today(\"yyyy-mm-dd\") %>\n*  <%= package.description %>\n*  <%= package.repository.type %>: <%= package.repository.url %>\n*/\n(function () {\n'use strict';\n",
+			"footer": "\n}());"
+		},
+		"files": {
+			"dist/<%= package.name %>.js": ["src/js/Deventor.js"],
+			"public/lib/<%= package.name %>.js": ["src/js/Deventor.js"]
+		}
+	}
+}

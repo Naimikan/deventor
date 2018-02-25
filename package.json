@@ -1,0 +1,35 @@
+{
+  "name": "deventor",
+  "version": "1.0.0",
+  "description": "A pure Javascript event emitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naimikan/deventor.git"
+  },
+  "keywords": [
+    "event-emitter",
+    "events",
+    "emitter",
+    "javascript"
+  ],
+  "author": "Guillem Aldeguer Lima <guillem.aldeguer@gmail.com> (https://naimikan.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Naimikan/deventor/issues"
+  },
+  "homepage": "https://github.com/Naimikan/deventor#readme",
+  "devDependencies": {
+    "connect-livereload": "^0.6.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "load-grunt-config": "^0.19.2"
+  }
+}
