@@ -18,15 +18,15 @@ Include the files in your `index.html`:
 <h2 align="center">Usage</h2>
 
 ```javascript
-var myEventEmitter = new Deventor({
-  name: 'myEventEmitter'
+var myDeventor = new Deventor({
+  name: 'myDeventor'
 });
 
-myEventEmitter.on('myCustomEvent', function (args) {
+myDeventor.on('myCustomEvent', function (args) {
   // ...
 });
 
-myEventEmitter.emit('myCustomEvent', {
+myDeventor.emit('myCustomEvent', {
   arg1: 'arg1',
   arg2: 'arg2'
 });
