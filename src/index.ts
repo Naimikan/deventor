@@ -12,6 +12,14 @@ class Deventor {
     this.#events = new Map();
   }
 
+  getEventNames(): string[] {
+    return Array.from(this.#events.keys());
+  }
+
+  getMaxListeners(): number {
+    return this.#maxListeners;
+  }
+
   setMaxListeners(newMaxListeners: number): Deventor {
     const oldMaxListeners = this.#maxListeners;
 
@@ -23,14 +31,6 @@ class Deventor {
     });
 
     return this;
-  }
-
-  getEventNames(): string[] {
-    return Array.from(this.#events.keys());
-  }
-
-  getMaxListeners(): number {
-    return this.#maxListeners;
   }
 
   on(eventName: string, listener: Function): Deventor {
