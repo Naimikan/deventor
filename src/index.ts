@@ -2,9 +2,6 @@ import { DEFAULT_MAX_LISTENERS, EVENTS } from './constants';
 
 import { DeventorOptions } from './types';
 
-/**
- * Deventor class
- */
 class Deventor {
   #maxListeners: number;
   #events: Map<string, Function[]>;
