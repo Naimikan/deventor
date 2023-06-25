@@ -123,3 +123,7 @@ class Deventor {
 }
 
 export default Deventor;
+
+export {
+  DeventorOptions,
+};
