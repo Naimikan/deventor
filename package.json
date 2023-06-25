@@ -1,6 +1,6 @@
 {
   "name": "deventor",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "A pure Javascript event emitter",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
